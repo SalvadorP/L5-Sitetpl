@@ -29,16 +29,20 @@
 				<!-- Left Side of the Nav Bar -->
 				<ul class="nav navbar-nav navbar-left mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="{{ route('/') }}">Front
+						<a class="nav-link" href="{{ route('/') }}"><i class="fa fa-home" aria-hidden="true">&nbsp;</i>Front
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
                     @auth
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin') }}">Link 1</a>
+                            <a class="nav-link" href="{{ route('admin') }}">
+                            <i class="fa fa-paper-plane" aria-hidden="true">&nbsp;</i>Link 1
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin') }}">Link 2</a>
+                            <a class="nav-link" href="{{ route('admin') }}">
+                            <i class="fa fa-space-shuttle" aria-hidden="true">&nbsp;</i>Link 2
+                            </a>
                         </li>
                     @endauth
 				</ul>
@@ -56,7 +60,7 @@
 							<li>
 								<a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-									Logout
+									<i class="fa fa-sign-out" aria-hidden="true">&nbsp;</i>Logout
 								</a>
 
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

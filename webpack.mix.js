@@ -11,6 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-    .sass('resources/assets/sass/frontend.scss', 'public/css');
-mix.sass('resources/assets/sass/backend.scss', 'public/css');
+mix.setPublicPath('public/');
+mix.setResourceRoot('../');
+mix.js('resources/assets/js/app.js', 'js')
+    .sass('resources/assets/sass/frontend.scss', 'css');
+mix.sass('resources/assets/sass/backend.scss', 'css');
+// mix.js('resources/assets/js/app.js', 'public/js')
+//     .sass('resources/assets/sass/frontend.scss', 'public/css');
+// mix.sass('resources/assets/sass/backend.scss', 'public/css');
