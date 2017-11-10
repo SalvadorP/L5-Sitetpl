@@ -25,4 +25,15 @@ class FrontController extends Controller
     {
         return view('frontendpage');
     }
+
+    /**
+     * Show a multilingual page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function multilangpage()
+    {
+      return view('multilang/multilangpage');
+    }
+
 }

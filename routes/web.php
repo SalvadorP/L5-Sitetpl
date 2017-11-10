@@ -17,5 +17,17 @@
 
 Auth::routes();
 
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+    ],
+    function() {
+        /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+        Route::get('/multilangpage', 'FrontController@multilangpage')->name('multilangpage');
+    }
+);
+
+
 Route::get('/', 'FrontController@index')->name('/');
 Route::get('/admin', 'BackController@index')->name('admin');

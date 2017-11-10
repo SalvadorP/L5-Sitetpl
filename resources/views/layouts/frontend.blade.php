@@ -42,7 +42,13 @@
 						<a class="nav-link" href="{{ route('/') }}">
 						<i class="fa fa-rocket" aria-hidden="true">&nbsp;</i>Link 2
 						</a>
-					</li>					
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ route('multilangpage') }}">
+							<i class="fa fa-language" aria-hidden="true">&nbsp;</i>Multilangpage
+						</a>
+					</li>
+
 				</ul>
 				<!-- Right Side Of Navbar -->
 				<ul class="nav navbar-nav navbar-right">

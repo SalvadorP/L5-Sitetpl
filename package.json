@@ -22,6 +22,7 @@
         "bootstrap": "^3.3.7",
         "bootswatch": "^3.3.7",
         "datatables.net-dt": "^1.10.16",
+        "flag-icon-css": "^2.8.0",
         "font-awesome": "^4.7.0"
     }
 }
